@@ -1,0 +1,146 @@
+:root {
+ --Orange: hsl(25, 97%, 53%);
+ --White: hsl(0, 0%, 100%);
+ --LightGrey: hsl(217, 12%, 63%);
+ --MediumGrey: hsl(216, 12%, 54%);
+ --LightDarkBlue: hsl(210, 19%, 22%);
+ --DarkBlue: hsl(213, 19%, 18%);
+ --VeryDarkBlue: hsl(228, 11%, 9%);
+}
+/*Border's width will be calculated in the total box size instead of overflowing*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-color: hsl(228, 11%, 9%);
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainbox, .thank-you {
+  background-color: hsl(213, 19%, 18%);
+  max-width: 340px;
+  border-radius: 1.4rem;
+  padding: 2rem 1.5rem;
+}
+
+.mainbox img {
+  background-color: hsl(217, 21%, 22%);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  color: white;
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+.numbers ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  color: hsl(217, 12%, 63%);
+  padding-left: 0px;
+}
+
+li {
+  display: inline;
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+/*Different effection of circle when users click or hover*/
+
+.rtng-btn {
+  background-color: hsl(217, 21%, 22%);
+  color: hsl(217, 12%, 63%);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.75rem;
+  display: block;
+  align-items: center;
+  outline: none;
+  padding-top: 0.2rem;
+  border: none;
+}
+
+.rtng-btn:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.rtng-btn:focus {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.submit-btn {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  border: 0;
+  border-radius: 30px;
+  height: 2.75rem;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 0.9rem;
+
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color:hsl(25, 97%, 53%);
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+footer{
+  font-family: sans-serif;
+  font-size: 12px;
+  color: hsl(10, 19%, 22%);
+}
+
+footer a {
+  color:hsl(217, 12%, 63%);
+}
+
+footer a:hover {
+  color: hsl(25, 97%, 53%);
+}
+footer a:focus {
+  color: hsl(217, 21%, 22%);
+}
+
+@media all and (min-width: 426px){
+  .mainbox .thank-you p {
+    font-size: 14px;
+  }
+  li {
+    margin:0;
+  }
+}
