@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/Siwi0w0/interactive-rating-component-main)
+- Solution URL: [My Solution](https://github.com/Siwi0w0/interactive-rating-component-main)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-How to use JavaScript to add some basici nteractivity for my website.
+How to use JavaScript to add some basic interactivity for my website. Use "hide"class and JavaScript to switch between pages.
 
 ### Continued development
 
