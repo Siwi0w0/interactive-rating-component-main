@@ -78,7 +78,7 @@ li {
   display: block;
   align-items: center;
   outline: none;
-  padding-top: 0.2rem;
+  width: 3em;
   border: none;
 }
 
